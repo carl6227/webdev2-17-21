@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id=”students”>
+        <ul id=”mgaGwapa”>
+            <li id=”Rafols”>Rafols</li>
+            <li id=”Jessa”>Jessa</li>
+            <li id=”Rubylyn”>Rubylyn</li>
+            <li id=”Raven”>Raven</li>
+        </ul>
+        <ul id=”mgaGwapo”>
+            <li id="Patrick">Patrick</li>
+            <li id=”Guian”>Guian</li>
+            <li id=”Justin”>Justin</li>
+            <li id=”Romeo”>Romeo</li>
+            <li id=”Miguel”>Miguel</li>
+        </ul>
+    </div>
+    <button onclick="myFunction()">remove</button>
+
+    <script>
+        function myFunction() {
+            const patrickGwapo = document.getElementById("Patrick");
+            const patrickParent = patrickGwapo.parentNode;
+            const patrickParentSibling = patrickParent.previousSibling.previousSibling;
+            const gwapaChidren=patrickParentSibling.childNodes;
+            var rubylyn=gwapaChidren[5];
+           
+            rubylyn.parentNode.removeChild(rubylyn);
+            
+        }
+    </script>
+
+
+</body>
+
+</html>
